@@ -47,6 +47,23 @@ NOISE:
 ------
 ffmpeg -i input.mp4 -vf noise=alls=80:allf=t+u output.mp4
 
+CURVES:
+---------
+ffmpeg -i input.mp4 -vf curves=vintage output.mp4
+
+ none
+ color_negative
+ cross_process
+ darker
+ increase_contrast
+ lighter
+ linear_contrast
+ medium_contrast
+ negative
+ strong_contrast
+ vintage
+
+
 USEFUL FILTERS:
 --------------
 https://ffmpeg.org/ffmpeg-filters.html
