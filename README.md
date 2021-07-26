@@ -39,6 +39,14 @@ SATURATION:
 -----------
 ffmpeg -i input.mp4 -vf colorcorrect=saturation=3.0 output.mp4
 
+COLORIZE:
+---------
+ffmpeg -i input.mp4 -vf colorize=hue=300:saturation=1 output.mp4
+
+NOISE:
+------
+ffmpeg -i input.mp4 -vf noise=alls=20:allf=t+u output.mp4
+
 USEFUL FILTERS:
 --------------
 https://ffmpeg.org/ffmpeg-filters.html
