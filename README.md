@@ -23,6 +23,8 @@ ffmpeg -i input.mp4 -b:v 64k -bufsize 64k out.mp4
 
 JOIN:
 -----
+Join 3 clips into a single clip.
+
 ffmpeg -i input.mp4 -i 2.mp4 -i 3.mp4 out.mp4
 
 TRIM:
