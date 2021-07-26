@@ -30,7 +30,7 @@ ffmpeg -ss 00:00:00 -i input.mp4 -c copy -t 00:00:05 output.mp4
 CROSSFADE:
 ---------
 ffmpeg -i input.mp4 -i 2.mp4 -filter_complex xfade=transition=fade:duration=2:offset=5 output.mp4
-
+ 
 HORIZONTAL BORDERS:
 --------
 ffmpeg -i input.mp4 -vf fillborders=left=1:right=1:top=100:bottom=100:mode=fixed output.mp4
