@@ -46,45 +46,46 @@ ffmpeg -i input.mp4 -vf colorcorrect=saturation=3.0 output.mp4
 USEFUL FILTERS:
 --------------
 https://ffmpeg.org/ffmpeg-filters.html
-  anullsrc, (empty audio)
-  boxblur, 
-  chromahold,
-  chromakey,
-  chromashift,
-  colorbalance,
-  colorcontrast,
-  colorcorrect,
-  colorize,
-  colorkey,
-  colortemperature,
-  convolution,
-  crop, (input video)
-  cover_rect,
-  deflicker,
-  deshake,
-  drawbox,
-  drawtext
-  fade,
-  fps, (force frame rate)
-  fillborders,
-  floodfill,
-  gblur, (gaussian),
-  hue,
-  elbg (posterize),
-  erosion,
-  mandelbrot,
-  maskfun, (create mask)
-  monochrome,
-  noise,
-  normalize, (RGB),
-  pseudocolor,
-  sidechaincompress,
-  stereowiden,
-  shear,
-  select, (select video frames to pass in the output)
-  smartblur,
-  tile,
-  trim,
-  vignette, 
-  vibrance, 
-  zoompan.
+
+    anullsrc, (empty audio)
+    boxblur, 
+    chromahold,
+    chromakey,
+    chromashift,
+    colorbalance,
+    colorcontrast,
+    colorcorrect,
+    colorize,
+    colorkey,
+    colortemperature,
+    convolution,
+    crop, (input video)
+    cover_rect,
+    deflicker,
+    deshake,
+    drawbox,
+    drawtext
+    fade,
+    fps, (force frame rate)
+    fillborders,
+    floodfill,
+    gblur, (gaussian),
+    hue,
+    elbg (posterize),
+    erosion,
+    mandelbrot,
+    maskfun, (create mask)
+    monochrome,
+    noise,
+    normalize, (RGB),
+    pseudocolor,
+    sidechaincompress,
+    stereowiden,
+    shear,
+    select, (select video frames to pass in the output)
+    smartblur,
+    tile,
+    trim,
+    vignette, 
+    vibrance, 
+    zoompan.
