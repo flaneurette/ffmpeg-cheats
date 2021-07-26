@@ -40,6 +40,7 @@ ffmpeg -i input.mp4 -i 2.mp4 -filter_complex xfade=transition=fade:duration=2:of
 HORIZONTAL BORDERS:
 -------------------
 Create horizontal 'blinds' also known as letterboxing.
+
 ffmpeg -i input.mp4 -vf fillborders=left=1:right=1:top=100:bottom=100:mode=fixed output.mp4
 
 SATURATION:
