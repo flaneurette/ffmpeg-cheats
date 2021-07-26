@@ -45,7 +45,7 @@ ffmpeg -i input.mp4 -vf colorize=hue=300:saturation=1 output.mp4
 
 NOISE:
 ------
-ffmpeg -i input.mp4 -vf noise=alls=20:allf=t+u output.mp4
+ffmpeg -i input.mp4 -vf noise=alls=80:allf=t+u output.mp4
 
 USEFUL FILTERS:
 --------------
