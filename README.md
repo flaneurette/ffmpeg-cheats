@@ -8,7 +8,6 @@ ffmpeg [global_options] {[input_file_options] -i input_url} ... {[output_file_op
 FILTER EXAMPLE: 
 --------------
 -vf fillborders = arg1=1 : arg2=2 : arg3=3
-https://ffmpeg.org/ffmpeg-filters.html
 
 FRAMERATE OUTPUT:
 -----------------
@@ -50,6 +49,7 @@ ffmpeg -i input.mp4 -vf colorcorrect=saturation=3.0 output.mp4
 
 USEFUL FILTERS:
 --------------
+https://ffmpeg.org/ffmpeg-filters.html
   anullsrc, (empty audio)
   boxblur, 
   chromahold,
