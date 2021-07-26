@@ -1,4 +1,4 @@
-# ffmpeg-doc
+# ffmpeg-cheats
 
 A FEW USEFUL FFMPEG EXAMPLES
 --------------
