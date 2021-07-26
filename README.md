@@ -1,6 +1,6 @@
 # ffmpeg-cheats
 
-ffmeg is an excellent software, and can be used to manually create films without a distracting GUI or expensive software. Perhaps, we are so used to GUI's that we rarely get to focus on the true creative process. By using ffmepeg, one has to be rather thoughtful and have much more patience. Art is indeed long... 
+ffmpeg is an excellent software, and can be used to manually create films without a distracting GUI or expensive software. Perhaps, we are so used to GUI's that we rarely get to focus on the true creative process. By using ffmepeg, one has to be rather thoughtful and have much more patience. Art is indeed long... 
 
 A FEW USEFUL FFMPEG EXAMPLES
 --------------
