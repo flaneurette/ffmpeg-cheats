@@ -29,7 +29,9 @@ ffmpeg -i input.mp4 -b:v 64k -bufsize 64k out.mp4
 
 JOIN:
 -----
-ffmpeg -i input.mp4 -i 2.mp4 -i 3.mp4 out.mp4
+Join 3 clips into a single output clip.
+
+ffmpeg -i 1.mp4 -i 2.mp4 -i 3.mp4 out.mp4
 
 TRIM:
 -----
@@ -39,10 +41,14 @@ ffmpeg -ss 00:00:05 -i input.mp4 -c copy -t 00:00:10 output.mp4
 
 CROSSFADE:
 --------- 
-ffmpeg -i input.mp4 -i 2.mp4 -filter_complex xfade=transition=fade:duration=2:offset=5 output.mp4
+Cross fade two clips into a single clip.
+
+ffmpeg -i 1.mp4 -i 2.mp4 -filter_complex xfade=transition=fade:duration=2:offset=5 output.mp4
  
 HORIZONTAL BORDERS:
 -------------------
+Create a letterbox, or 'horizontal blinds' over a video with a 100px height.
+
 ffmpeg -i input.mp4 -vf fillborders=left=1:right=1:top=100:bottom=100:mode=fixed output.mp4
 
 SATURATION:
@@ -78,7 +84,7 @@ ffmpeg -i input.mp4 -vf curves=vintage output.mp4
 
 FILTER EXAMPLE: 
 --------------
-It is useful to know that ffmpeg, seemingly, delimits filter arguments with a ':'. 
+It is useful to know that ffmpeg, seemingly, delimits filter arguments/values with a ':'. 
 
 Example:
 
