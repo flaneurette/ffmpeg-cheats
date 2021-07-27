@@ -13,6 +13,12 @@ Convert a compressed mp4 into a raw avi container, in order to apply effects wit
 
 ffmpeg -i input.mp4 -c:v rawvideo output.avi
 
+AVI TO MP4
+----------
+Convert AVI to compressed MP4.
+
+ffmpeg -i input.avi -c:v libx264 output.mp4
+
 FRAMERATE OUTPUT:
 -----------------
 ffmpeg -i input.mp4 -r 24 out.mp4
@@ -23,8 +29,6 @@ ffmpeg -i input.mp4 -b:v 64k -bufsize 64k out.mp4
 
 JOIN:
 -----
-Join 3 clips into a single clip.
-
 ffmpeg -i input.mp4 -i 2.mp4 -i 3.mp4 out.mp4
 
 TRIM:
@@ -39,8 +43,6 @@ ffmpeg -i input.mp4 -i 2.mp4 -filter_complex xfade=transition=fade:duration=2:of
  
 HORIZONTAL BORDERS:
 -------------------
-Create horizontal 'blinds' also known as letterboxing.
-
 ffmpeg -i input.mp4 -vf fillborders=left=1:right=1:top=100:bottom=100:mode=fixed output.mp4
 
 SATURATION:
