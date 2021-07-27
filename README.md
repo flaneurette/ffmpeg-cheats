@@ -33,7 +33,7 @@ Join 3 clips into a single output clip.
 
 ffmpeg -i 1.mp4 -i 2.mp4 -i 3.mp4 out.mp4
 
-TRIM:
+TRIM & SLICE:
 -----
 Trim or 'slice' a 5 second clip from a input file. Time format: HH:MM:SS
 
