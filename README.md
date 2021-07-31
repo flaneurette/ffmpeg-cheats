@@ -137,13 +137,14 @@ https://ffmpeg.org/ffmpeg-filters.html
     vibrance, 
     zoompan.
 
+ENCODE
+-----
+Encode videos for videosharing platforms.
+https://trac.ffmpeg.org/wiki/Encode/YouTube
 
 WEBCAM
 ------
-Record stream from webcam, at driver zero. 
-
-ffmpeg -y -f vfwcap -r 25 -i 0 out.mp4
-
+Record from webcam.
 https://trac.ffmpeg.org/wiki/Capture/Webcam
 
 STREAM
