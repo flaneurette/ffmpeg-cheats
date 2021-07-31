@@ -145,3 +145,8 @@ Record stream from webcam, at driver zero.
 ffmpeg -y -f vfwcap -r 25 -i 0 out.mp4
 
 https://trac.ffmpeg.org/wiki/Capture/Webcam
+
+STREAM
+------
+Capture and stream.
+https://trac.ffmpeg.org/wiki/StreamingGuide
