@@ -5,19 +5,19 @@ ffmpeg is an excellent software, and can be used to manually create films withou
 FFMPG EXAMPLES
 --------------
 
-ffmpeg [global_options] {[input_file_options] -i input_url} ... {[output_file_options] output_url} ...
+	ffmpeg [global_options] {[input_file_options] -i input_url} ... {[output_file_options] output_url} ...
 
 RAW VIDEO
 ---------
 Convert a compressed mp4 into a raw avi container, in order to apply effects without much loss.
 
-ffmpeg -i input.mp4 -c:v rawvideo output.avi
+	ffmpeg -i input.mp4 -c:v rawvideo output.avi
 
 STILLS
 ------
 Slice film into PNG stills.
 
-	ffmpeg -i input.mp4 -vcodec png -s 1920x1280 "C:\slices\%03d.png"
+	ffmpeg -i input.mp4 -vcodec png -s 1920x1280 "C:\stills\%03d.png"
 
 AVI TO MP4
 ----------
