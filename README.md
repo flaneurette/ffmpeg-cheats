@@ -16,63 +16,64 @@ ffmpeg -i input.mp4 -c:v rawvideo output.avi
 STILLS
 ------
 Slice film into PNG stills.
-ffmpeg -i input.mp4 -vcodec png -s 1920x1280 "C:\slices\%03d.png"
+
+	ffmpeg -i input.mp4 -vcodec png -s 1920x1280 "C:\slices\%03d.png"
 
 AVI TO MP4
 ----------
 Convert AVI to compressed MP4.
 
-ffmpeg -i input.avi -c:v libx264 output.mp4
+	ffmpeg -i input.avi -c:v libx264 output.mp4
 
 FRAMERATE OUTPUT:
 -----------------
-ffmpeg -i input.mp4 -r 24 out.mp4
+	ffmpeg -i input.mp4 -r 24 out.mp4
 
 BITRATE:
 --------
-ffmpeg -i input.mp4 -b:v 64k -bufsize 64k out.mp4
+	ffmpeg -i input.mp4 -b:v 64k -bufsize 64k out.mp4
 
 JOIN:
 -----
 Join 3 clips into a single output clip.
 
-ffmpeg -i 1.mp4 -i 2.mp4 -i 3.mp4 out.mp4
+	ffmpeg -i 1.mp4 -i 2.mp4 -i 3.mp4 out.mp4
 
 TRIM & SLICE:
 -----
 Trim or 'slice' a 5 second clip from a input file. Time format: HH:MM:SS
 
-ffmpeg -ss 00:00:05 -i input.mp4 -c copy -t 00:00:10 output.mp4
+	ffmpeg -ss 00:00:05 -i input.mp4 -c copy -t 00:00:10 output.mp4
 
 CROSSFADE:
 --------- 
 Cross fade two clips into a single clip.
 
-ffmpeg -i 1.mp4 -i 2.mp4 -filter_complex xfade=transition=fade:duration=2:offset=5 output.mp4
+	ffmpeg -i 1.mp4 -i 2.mp4 -filter_complex xfade=transition=fade:duration=2:offset=5 output.mp4
  
 HORIZONTAL BORDERS:
 -------------------
 Create a letterbox, or 'horizontal blinds' over a video with a 100px height.
 
-ffmpeg -i input.mp4 -vf fillborders=left=1:right=1:top=100:bottom=100:mode=fixed output.mp4
+	ffmpeg -i input.mp4 -vf fillborders=left=1:right=1:top=100:bottom=100:mode=fixed output.mp4
 
 SATURATION:
 -----------
-ffmpeg -i input.mp4 -vf colorcorrect=saturation=3.0 output.mp4
+	ffmpeg -i input.mp4 -vf colorcorrect=saturation=3.0 output.mp4
 
 COLORIZE:
 ---------
-ffmpeg -i input.mp4 -vf colorize=hue=300:saturation=1 output.mp4
+	ffmpeg -i input.mp4 -vf colorize=hue=300:saturation=1 output.mp4
 
 NOISE:
 ------
-ffmpeg -i input.mp4 -vf noise=alls=80:allf=t+u output.mp4
+	ffmpeg -i input.mp4 -vf noise=alls=80:allf=t+u output.mp4
 
 CURVES:
 ---------
 ffmpeg also provides a few 'presets' that can be applied through it's curves library.
 
-ffmpeg -i input.mp4 -vf curves=vintage output.mp4
+	ffmpeg -i input.mp4 -vf curves=vintage output.mp4
 
 	options:
 	none
@@ -93,7 +94,7 @@ It is useful to know that ffmpeg, seemingly, delimits filter arguments/values wi
 
 Example:
 
--vf colorize = arg1=1:arg2=2:arg3=3
+	-vf colorize = arg1=1:arg2=2:arg3=3
 
 USEFUL FILTERS:
 --------------
