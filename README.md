@@ -13,6 +13,11 @@ Convert a compressed mp4 into a raw avi container, in order to apply effects wit
 
 ffmpeg -i input.mp4 -c:v rawvideo output.avi
 
+STILLS
+------
+Slice film into PNG stills.
+ffmpeg -i input.mp4 -vcodec png -s 1920x1280 "C:\slices\%03d.png"
+
 AVI TO MP4
 ----------
 Convert AVI to compressed MP4.
