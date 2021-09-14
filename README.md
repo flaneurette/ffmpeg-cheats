@@ -18,6 +18,10 @@ STILLS
 Slice film into PNG stills.
 
 	ffmpeg -i input.mp4 -vcodec png -s 1920x1280 "C:\stills\%03d.png"
+	
+CONVERT STILL IMAGE & MP3 TO A MOVIE
+------------------------------
+	ffmpeg -loop 1 -framerate 2 -i image1920x1080.png -i music.mp3 -c:v libx264 -preset medium -tune stillimage -crf 18 -c:a copy -pix_fmt yuv420p output.mkv
 
 AVI TO MP4
 ----------
