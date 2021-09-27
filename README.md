@@ -23,6 +23,11 @@ CONVERT STILL IMAGE & MP3 TO A MOVIE
 ------------------------------
 	ffmpeg -loop 1 -framerate 2 -i image1920x1080.png -i music.mp3 -c:v libx264 -preset medium -tune stillimage -crf 18 -c:a copy -pix_fmt yuv420p output.mkv
 
+REPLACE AUDIO 
+-------------
+
+	ffmpeg -i input.mp4 -i audio.wav -map 0:v -map 1:a -c:a:v copy output.mkv
+
 AVI TO MP4
 ----------
 Convert AVI to compressed MP4.
