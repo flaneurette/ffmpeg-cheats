@@ -166,3 +166,11 @@ STREAM
 ------
 Capture and stream.
 https://trac.ffmpeg.org/wiki/StreamingGuide
+
+# CAPTURE DESKTOP AUDIO & VIDEO
+Credit: https://www.codeproject.com/Tips/5291304/Video-Screen-Capture-with-Audio
+
+	C:\ffmpeg.exe -f dshow -i audio="Stereo Mix (Realtek(R) Audio)" -f gdigrab -itsoffset 00:00:0.6 -i desktop -c:v libx264rgb -framerate 24 -crf 20 -preset ultrafast output-file.mp4
+
+
+
