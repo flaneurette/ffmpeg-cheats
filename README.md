@@ -50,9 +50,12 @@ Join 3 clips into a single output clip.
 
 TRIM & SLICE:
 -----
-Trim or 'slice' a 5 second clip from a input file. Time format: HH:MM:SS
+Trim or 'slice' a 5 second clip from a 7 second input file. Time format: HH:MM:SS
 
-	ffmpeg -ss 00:00:05 -i input.mp4 -c copy -t 00:00:10 output.mp4
+	ffmpeg -i input.mp4 -ss 2 -to 7 -c copy cut.mkv
+or:
+	
+	ffmpeg -ss 00:00:02 -i input.mp4 -c copy -t 00:00:07 output.mp4
 
 CROSSFADE:
 --------- 
