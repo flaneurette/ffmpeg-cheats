@@ -44,9 +44,9 @@ BITRATE:
 
 JOIN:
 -----
-Join 3 clips into a single output clip.
+Join 3 clips into a single output clip. First mux the .mp4's to .ts and then concat the files into a mp4:
 
-	ffmpeg -i 1.mp4 -i 2.mp4 -i 3.mp4 out.mp4
+	f.exe -i "concat:cut.ts|cut_2.ts|cut_3.ts" -c copy cut.mp4
 
 TRIM & SLICE:
 -----
